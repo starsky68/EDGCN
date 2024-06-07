@@ -72,7 +72,9 @@ class HET_attr_align2(nn.Module):
         self.highwayWr2 = nn.Parameter(torch.zeros(size=(self.e_dim, self.e_dim)))
         self.highwaybr2 = nn.Parameter(torch.zeros(size=(self.e_dim, 1)))
 
-        ######################################dddd
+        ######################################
+        #Multi-heterogeneous neighborhood-aware for knowledge graphs alignment
+        #在此方法基础之上层架距离度量
         self.dist = nn.PairwiseDistance(p=2, eps=1e-5, keepdim=True)
 
 
