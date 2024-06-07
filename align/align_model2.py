@@ -60,7 +60,9 @@ class HET_align2(nn.Module):  # herited classes: nn.Module
         self.eer_adj_index = input_data.eer_adj_index
         self.eer_adj_data = input_data.eer_adj_data
 
-        ######################################dddd
+        ######################################
+        #Multi-heterogeneous neighborhood-aware for knowledge graphs alignment
+        #在原有基础之上增加距离测量
         self.dist = nn.PairwiseDistance(p=2, eps=1e-5, keepdim=True)
         # Define the relation coefficient loading on E
         if self.is_100K:
