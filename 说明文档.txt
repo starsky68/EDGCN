@@ -1,0 +1,5 @@
+ Python>=3.7
+pytorch>=1.7.0
+tensorboardX>=2.1.0
+Numpy>=1.19.5(不宜过高)
+align_exc_15K.py和align_exc_DWY100K.py是不同数据集的运行文件。
